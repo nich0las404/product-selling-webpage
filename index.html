@@ -31,29 +31,29 @@
         <section class="section1-container">
             <h1><i class="fa-solid fa-list"></i> Category</h1>
             <div class="category-container">
-                <button class="category-btn">
+                <button onclick="location.href='#gloves-section'" class="category-btn category-left">
                     <div class="background-category background1"></div>
                     <div class="category">Gloves</div>
                 </button>
-                <button class="category-btn">
+                <button onclick="location.href='#shoes-section'" class="category-btn category-left">
                     <div class="background-category background2"></div>
                     <div class="category">Shoes</div>
                 </button>
-                <button class="category-btn">
+                <button onclick="location.href='#protective-gear-section'"class="category-btn category-left">
                     <div class="background-category background3"></div>
                     <div class="category">Protective Gear</div>
                 </button>
-                <button class="category-btn">
+                <button onclick="location.href='#hand-wraps-section'" class="category-btn category-right">
                     <div class="background-category background4"></div>
                     <div class="category">Hand wraps</div>
                 </button>
-                <button class="category-btn">
+                <button onclick="location.href='#jump-rope-section'" class="category-btn category-right">
                     <div class="background-category background5"></div>
                     <div class="category">Jump rope</div>
                 </button>
-                <button class="category-btn">
+                <button onclick="location.href='#sports-wear-section'" class="category-btn category-right">
                     <div class="background-category background6"></div>
-                    <div class="category">Shorts</div>
+                    <div class="category">Sports Wear</div>
                 </button>
             </div>
         </section>
@@ -80,11 +80,12 @@
         </section>
         <section class="product-by-category-container">
             <!-- boxing gloves -->
-             <section class="gloves-container">
-                <h1>Gloves</h1>
+             <section id="gloves-section" class="gloves-container">
+                <h1 class="category-title">Gloves</h1>
                 <div class="scroller">
                     <div class="item-card">
                         <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
                             <span class="discount-tag">10% off</span>
                             <div class="product-img"></div>
                             <button class="card-btn">add to Cart</button>
@@ -92,35 +93,548 @@
                         <div class="item-desc">
                             <h2 class="product-brand">Venum red Gloves</h2>
                             <p class="product-short-description">Size available 8oz/12oz/16oz. High quality buffalo leather</p>
-                            <span class="product-price">$35</span><span class="strip-price">$39.99</span>
+                            <span class="product-price">$26.99</span><span class="strip-price">$29.99</span>
                         </div>
                     </div>
                     <div class="item-card">
                         <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
                             <span class="discount-tag">10% off</span>
                             <div class="product-img"></div>
                             <button class="card-btn">add to Cart</button>
                         </div>
                         <div class="item-desc">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-description">a short line about the product ril fake</p>
+                            <h2 class="product-brand">jeremy golden gloves</h2>
+                            <p class="product-short-description">Made with 24k gold and amazing cow leather</p>
                             <span class="product-price">$35</span><span class="strip-price">$39.99</span>
                         </div>
                     </div>
                     <div class="item-card">
                         <div class="product-img-container">
-                            <span class="discount-tag">10% off</span>
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
                             <div class="product-img"></div>
                             <button class="card-btn">add to Cart</button>
                         </div>
                         <div class="item-desc">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-description">a short line about the product ril fake</p>
-                            <span class="product-price">$35</span><span class="strip-price">$39.99</span>
+                            <h2 class="product-brand">Venum Elite Gloves</h2>
+                            <p class="product-short-description">Handcrafted with premium Skintex leather, designed for pros</p>
+                            <span class="product-price">$49.99</span><span class="strip-price">$59.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <div class="product-img"></div>
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Pro Style</h2>
+                            <p class="product-short-description">High-quality gloves with extra padding for ultimate protection</p>
+                            <span class="product-price">$39.99</span><span class="strip-price">$49.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <div class="product-img"></div>
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">World Title Gel Gloves</h2>
+                            <p class="product-short-description">Gel enforced lining for ultimate impact resistance</p>
+                            <span class="product-price">$54.99</span><span class="strip-price">$72.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <div class="product-img"></div>
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Ringside Apex Flash</h2>
+                            <p class="product-short-description">Made with IMF technology for superior shock absorption</p>
+                            <span class="product-price">$64.99</span><span class="strip-price">$92.99</span>
                         </div>
                     </div>
                 </div>
              </section>
+            <!-- SHOES SECTION -->
+            <section id="shoes-section" class="shoes-container">
+                <h1 class="category-title">Shoes</h1>
+                <div class="scroller">
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
+                            <img src="https://images-cdn.ubuy.co.id/653972f8880af23eac443216-everlast-new-elite-high-top-boxing-shoes.jpg" alt="Everlast Elite Shoes" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Elite Shoes</h2>
+                            <p class="product-short-description">Breathable mesh with durable synthetic leather</p>
+                            <span class="product-price">$79.99</span><span class="strip-price">$94.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/4/17/46d256f4-9e11-4917-9ded-2b143c2f4ed0.jpg" alt="Adidas Box Hog" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Black Adidas Box Hog</h2>
+                            <p class="product-short-description">Lightweight and flexible with excellent grip</p>
+                            <span class="product-price">$89.99</span><span class="strip-price">$112.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://images-cdn.ubuy.co.id/66410dca2fce10437b5fa401-nike-hyperko-2-boxing-boots-shoes-boxing.jpg" alt="Nike HyperKO" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand"><span class="new-span">NEW!</span> Nike HyperKO</h2>
+                            <p class="product-short-description">Offers great ankle support and durability with a sleek design.</p>
+                            <span class="product-price">$129.99</span><span class="strip-price">$144.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <img src="https://i.ebayimg.com/images/g/KE8AAOSwrPpmAe7Y/s-l1200.jpg" alt="Reebok Boxing Boots" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Reebok Boxing Boots</h2>
+                            <p class="product-short-description">Features a padded collar for enhanced performance</p>
+                            <span class="product-price">$69.99</span><span class="strip-price">$93.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <img src= "https://bridgecityfightshop.com/cdn/shop/products/Ringside_Diablo_Boxing_Shoes_orange_1024x1024.jpg?v=1506997783" alt="Ringside Diablo" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Orange Ringside Diablo</h2>
+                            <p class="product-short-description">Cool design with a flexible sole, offering comfort and traction</p>
+                            <span class="product-price">$84.99</span><span class="strip-price">$121.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">5% off</span>
+                            <img src="https://www.titleboxing.com/cdn/shop/products/TBS2-BK_1_x800.jpg?v=1694204641" alt="Title Boxing Speed" class="product-img">
+                            <button class="card-btn">add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Title Boxing Speed</h2>
+                            <p class="product-short-description">Streamlined design with quick lace-up system</p>
+                            <span class="product-price">$74.99</span><span class="strip-price">$78.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROTECTIVE GEAR SECTION -->
+            <section id="protective-gear-section" class="protective-gear-container"></section>
+                <h1 class="category-title">Protective Gear</h1>
+                <div class="scroller">
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://eu.venum.com/cdn/shop/products/8_252F1_252Fd_252F4_252F81d4280e68f9210c636c81009fd74b42d2c7cfa7_HEADGEAR_CHALLENGER_2.0_BLACK_GOLD_11_6fe44b91-7e8c-4ff8-9dfd-dbaf14b7a7d9.jpg?v=1699293283&width=1946" alt="Venum Challenger Headgear" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Venum Challenger</h2>
+                            <p class="product-short-description">Lightweight and comfortable, offering full face protection.</p>
+                            <span class="product-price">$54.99</span><span class="strip-price">$60.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
+                            <img src="https://www.titleboxing.com/cdn/shop/products/gvhg-bk-wh-rd_1_1.jpg?v=1671783739" alt="Title Gel World Headgear" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Title Gel World Headgear</h2>
+                            <p class="product-short-description">Gel-lined for maximum impact absorption and comfort.</p>
+                            <span class="product-price">$79.99</span><span class="strip-price">$94.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <img src="https://i5.walmartimages.com/seo/Ringside-Competition-Boxing-Headgear-USA-Mexico-Extra-Large_114f72b2-1559-4bd2-b8d3-fe3d1e675869.6134ef1e7cf3e0349a6ab66e90b6441a.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Ringside Competition Headgear" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Ringside Headgear</h2>
+                            <p class="product-short-description">USA Boxing approved, featuring an adjustable fit for all sizes.</p>
+                            <span class="product-price">$99.99</span><span class="strip-price">$124.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">5% off</span>
+                            <img src="https://i.ebayimg.com/images/g/jnMAAOSwFflehleB/s-l1200.jpg" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast fresh Headgear</h2>
+                            <p class="product-short-description">Anti-microbial treatment ,ensuring long-lasting use.</p>
+                            <span class="product-price">$59.99</span><span class="strip-price">$62.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <img src="https://serious-fitness-limited.myshopify.com/cdn/shop/products/adisbhg042_c_2048x.jpg?v=1607944921" alt="Adidas Speed Headgear" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Adidas Speed Headgear</h2>
+                            <p class="product-short-description">Ultra-lightweight with an adjustable strap for a secure fit.</p>
+                            <span class="product-price">$69.99</span><span class="strip-price">$92.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <img src="https://www.wjapanboxing.com/cdn/shop/products/WhiteBlack_1200x1200.jpg?v=1615013799" alt="Winning Full-Face Headgear" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Winning Full-Face Headgear</h2>
+                            <p class="product-short-description">Premium protection coverage for intense sparring sessions.</p>
+                            <span class="product-price">$249.99</span><span class="strip-price">$349.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HAND WRAPS SECTION -->
+            <section id="hand-wraps-section" class="hand-wraps-container">
+                <h1 class="category-title">Hand Wraps</h1>
+                <div class="scroller">
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/5/2/446c0353-504b-40d6-a938-949fe779e262.jpg" alt="Venum Boxing Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Venum Boxing Hand Wraps</h2>
+                            <p class="product-short-description">Stretchy and durable, perfect for amateur & professional level of training.</p>
+                            <span class="product-price">$12.99</span><span class="strip-price">$14.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <img src="https://ukstore.everlast.com/images/products/76682318_l.jpg" alt="Everlast Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Hand Wraps</h2>
+                            <p class="product-short-description">Designed with breathable fabric to keep hands cool and comfortable.</p>
+                            <span class="product-price">$9.99</span><span class="strip-price">$12.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
+                            <img src="https://www.titleboxing.com/cdn/shop/files/GIFW_1.jpg?v=1698684830" alt="Title Gel Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Title Gel Hand Wraps</h2>
+                            <p class="product-short-description">Enchanced Gel padding for added protection and added knuckle support.</p>
+                            <span class="product-price">$16.99</span><span class="strip-price">$19.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <img src="https://www.ringside.com/media/catalog/product/cache/15d1fe01646e272664ed1c1747c334a6/K/H/KHW_V1.JPG" alt="Ringside Mexican Style Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Ringside Mexican Style Hand Wraps</h2>
+                            <p class="product-short-description">Classic Mexican style with a perfect blend of stretch and support.</p>
+                            <span class="product-price">$11.99</span><span class="strip-price">$15.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">5% off</span>
+                            <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-10934138/adidas_adidas_handwrap_new_full03_cjwr5zxw.jpg" alt="Adidas Pro Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Adidas Pro Hand Wraps</h2>
+                            <p class="product-short-description">Long-lasting material with an adjustable Velcro strap for a secure fit.</p>
+                            <span class="product-price">$14.49</span><span class="strip-price">$15.29</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <img src="https://www.wjapanboxing.com/cdn/shop/products/2102082765_B_grande.jpg?v=1573528962" alt="Winning Boxing Hand Wraps" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Winning Boxing Hand Wraps</h2>
+                            <p class="product-short-description">Premium cotton blend for maximum comfort and wrist support.</p>
+                            <span class="product-price">$24.99</span><span class="strip-price">$35.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- JUMPROPE SECTION -->
+            <section id="jump-rope-section" class="jumpropes-container">
+                <h1 class="category-title">Boxing Jump Ropes</h1>
+                <div class="scroller">
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
+                            <img src='venum-jumprope.webp' alt="Venum Speed Jump Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Venum Speed Jump Rope</h2>
+                            <p class="product-short-description">Designed for speed, adjustable for all heights.</p>
+                            <span class="product-price">$19.99</span><span class="strip-price">$23.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <img src="https://m.media-amazon.com/images/I/718lZ7YJdAL._AC_UY1000_.jpg" alt="Everlast Leather Jump Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Leather Jump Rope</h2>
+                            <p class="product-short-description">Classic leather rope for durability and a smooth swing.</p>
+                            <span class="product-price">$25.99</span><span class="strip-price">$32.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://ringsideboxing.co.uk/cdn/shop/files/ringside-boxing-uk-weighted-handle-leather-skipping-rope-45249576861983_9a42376d-aa8b-45a5-87f2-9ae5f48ecdbe.webp?v=1707338211&width=2048" alt="Ringside Adjustable Jump Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Ringside Jump Rope</h2>
+                            <p class="product-short-description">High-quality PVC rope with an adjustable length feature.</p>
+                            <span class="product-price">$14.99</span><span class="strip-price">$16.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <img src="https://www.titleboxing.com/cdn/shop/products/sjrp2-bk_1_1.jpg?v=1671783105" alt="Title Gel Weighted Jump Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Title Gel Jump Rope</h2>
+                            <p class="product-short-description">Gel-coated handles for grip and extra resistance training.</p>
+                            <span class="product-price">$29.99</span><span class="strip-price">$39.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">5% off</span>
+                            <img src="https://id.adidascombatsports.com/wp-content/uploads/2022/06/adiJRW01-Wooden-skipping-rope-scaled.jpg" alt="Adidas Speed Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Adidas Speed Rope</h2>
+                            <p class="product-short-description">Lightweight and fast, ideal for cardio and agility training.</p>
+                            <span class="product-price">$18.99</span><span class="strip-price">$19.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <img src="https://i.ebayimg.com/00/s/MTQ3OFgxMTA4/z/1~sAAOSwWf1hYpgn/$_57.JPG?set_id=8800005007" alt="Winning Pro Jump Rope" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Winning Pro Jump Rope</h2>
+                            <p class="product-short-description">high-speed bearings with smooth rotation function.</p>
+                            <span class="product-price">$34.99</span><span class="strip-price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SPORTSWEAR SECTION -->
+            <section id="sports-wear-section" class="sportswear-container">
+                <h1 class="category-title">Sports Wear</h1>
+                <div class="scroller">
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">20% off</span>
+                            <img src="https://www.venum.com/cdn/shop/products/8_252F5_252F4_252Fe_252F854ee49bbe82e149f9a213ea5373de2185181802_ts_compression_contender_3_ls_black_grey_1500_01_1.jpg?v=1658482632" alt="Venum Compression Shirt" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Venum Compression</h2>
+                            <p class="product-short-description">Enhances blood flow and reduces muscle fatigue during training.</p>
+                            <span class="product-price">$29.99</span><span class="strip-price">$37.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">15% off</span>
+                            <img src="https://www.everlastboxing.com.au/cdn/shop/products/DWEQ140619_DWWHT_1_6b2914c7-209c-4afe-bdad-cdaf377c9647_grande.jpg?v=1704843360" alt="Everlast Fight Shorts" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Fight Shorts</h2>
+                            <p class="product-short-description">Lightweight and flexible for unrestricted movement in the ring.</p>
+                            <span class="product-price">$34.99</span><span class="strip-price">$40.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://www.ringside.com/media/catalog/product/cache/15d1fe01646e272664ed1c1747c334a6/r/h/rhss_v1.jpg" alt="Ringside Sauna Suit" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Ringside Sauna Suit</h2>
+                            <p class="product-short-description">Promotes and helps sweating for cutting weight, encourages body detoxification.</p>
+                            <span class="product-price">$45.99</span><span class="strip-price">$50.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">25% off</span>
+                            <img src="https://www.adidas.co.id/media/catalog/product/h/k/hk2338_fc_ecom.jpg" alt="Adidas Sport Tank" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Adidas Sport Tank</h2>
+                            <p class="product-short-description">Breathable thin fabric for maximum comfort during intense workouts.</p>
+                            <span class="product-price">$19.99</span><span class="strip-price">$26.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">30% off</span>
+                            <img src="https://www.wjapanboxing.com/cdn/shop/products/F-5-REDWHT_grande.jpg?v=1647448763" alt="Winning Boxing Shorts" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Winning Boxing Shorts</h2>
+                            <p class="product-short-description">Durable and stylish, designed for professional competition and matches.</p>
+                            <span class="product-price">$39.99</span><span class="strip-price">$57.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">12% off</span>
+                            <img src="https://ukstore.everlast.com/images/products/63482418_h.jpg" alt="Everlast Training Hoodie" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Everlast Training Hoodie</h2>
+                            <p class="product-short-description">Keeps you warm in cold weathers and prepare you for outdoor training sessions.</p>
+                            <span class="product-price">$49.99</span><span class="strip-price">$56.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">18% off</span>
+                            <img src="https://cdn.shopify.com/s/files/1/0767/3072/8767/files/7a0553a0b69896dc4fc5ac7397b702ea6e3ea2d5_Abyss_Leggings___Shadow_Blue_03_454x.jpg?v=1722934626" alt="Venum Kickboxing Leggings" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Venum Kickboxing Leggings</h2>
+                            <p class="product-short-description">Flexible and comfortable to move in, ideal for kickboxing and MMA training.</p>
+                            <span class="product-price">$27.99</span><span class="strip-price">$34.49</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">22% off</span>
+                            <img src="https://www.shogunmartialarts.com.au/assets/full/RDX-MSS-T15.jpg?20221022111012" alt="RDX Workout Shorts" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">RDX Workout Shorts</h2>
+                            <p class="product-short-description">Quick-dry fabric with an elastic waistband for a perfect-size and snug fit.</p>
+                            <span class="product-price">$24.99</span><span class="strip-price">$31.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">10% off</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4wu6u3lPcwSw6nGhQHYFBf5Xnoid43utLA&s" alt="Title Combat Shirt" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Title Combat Shirt</h2>
+                            <p class="product-short-description">Moisture-wicking fabric to keep you dry during light and hard sparring.</p>
+                            <span class="product-price">$34.99</span><span class="strip-price">$38.99</span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="product-img-container">
+                            <span class="like-product"><button><i class="fa-regular fa-heart"></i></button></span>
+                            <span class="discount-tag">28% off</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-tS6MNUaCQNMFM4oNPjarHrRpJzM4PPmHw&s" alt="Hayabusa Compression Shorts" class="product-img">
+                            <button class="card-btn">Add to Cart</button>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="product-brand">Hayabusa tight Shorts</h2>
+                            <p class="product-short-description">Fabric Provides support and stability for high-intensity training.</p>
+                            <span class="product-price">$29.99</span><span class="strip-price">$41.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>            
         </section> 
     </main>
     <footer></footer>

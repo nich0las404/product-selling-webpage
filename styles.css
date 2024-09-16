@@ -234,6 +234,43 @@ main{
     position: relative;
     overflow: hidden; /* Ensures the image stays within the button */
     cursor: pointer;
+    /* hidden initial state */
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animation for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for sliding in from the right */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animations */
+.category-left.show {
+    animation: slideInFromLeft 0.6s forwards;
+}
+
+.category-right.show {
+    animation: slideInFromRight 0.6s forwards;
 }
 
 .category {
@@ -276,6 +313,7 @@ main{
     position: absolute;
     transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth zoom and opacity change */
     transform: scale(1); /* Initial scale */
+    transform: translateX(0);
 }
 .category-btn:hover .background-category {
     transform: scale(1.1); /* Zoom in the image on hover */
@@ -292,7 +330,7 @@ main{
     flex-direction: column;
     padding: 2.5rem 0;
     background-size: 300% 300%;
-    animation: disc-background 4s ease-in-out infinite;
+    animation: disc-background 3s ease-in-out infinite;
     position: relative;
     z-index: 1;
 }
@@ -330,6 +368,20 @@ main{
     border-radius: 10px;
     height: 60vh;
     backdrop-filter: blur(5px);
+    transition: 0.7s ease;
+    opacity: 0;
+    transform: translateX(0);
+}
+.discount-container.show{
+    animation: slideFromLeft 1s forwards;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+    } 100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .discount-inner-container{
     width: 50%;
@@ -444,22 +496,37 @@ main{
 .original-price{
     text-decoration: line-through
 }
-/* BOXING gloves section */
-.gloves-container h1{
-    margin: 40px 5vw 15px;
+/* MAIN section */
+.category-title{
+    margin: 50px 5vw 20px;
     font-size: 2rem;
 }
+
 .scroller{
     padding: 0 5vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.scroller.show{
+    animation: slideFromLeft 1s forwards;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+    } 100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .item-card {
     flex: 0 0 auto;
     width: 250px;
     margin-right: 40px;
     border-radius: 15px;
+    padding-bottom: 12px;
 }
 
 .product-img-container {
@@ -473,14 +540,31 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: url(venum-boxing-gloves.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.item-card:nth-last-child(2) .product-img{
+.item-card:nth-child(1) .product-img{
+    background-image: url(venum-boxing-gloves.webp);
+}
+.item-card:nth-child(2) .product-img{
     background-image: url(Jeremy_golden_boxing_gloves.png);
     background-color: rgb(231.01, 231.01, 231.01);
+}
+.item-card:nth-child(3) .product-img{
+    background-image: url(https://images.tokopedia.net/img/cache/700/hDjmkQ/2022/11/30/cfda42b4-6cc4-4bf4-8a16-517aeb417169.jpg);
+}
+.item-card:nth-child(4) .product-img{
+    background-image: url(https://images.tokopedia.net/img/cache/700/VqbcmM/2023/4/9/d5ac554e-3c6b-4a1c-a02d-6b9b18ccb661.jpg);
+}
+.item-card:nth-child(5) .product-img{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61mFU3WYRgL._AC_UL600_SR600,600_.jpg);
+}
+.item-card:nth-child(6) .product-img{
+    background-image: url(https://www.ringside.com/media/catalog/product/cache/15d1fe01646e272664ed1c1747c334a6/f/t/ftg2_1_v1.jpg);
+}
+.item-card:nth-child(7) .product-img{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXim_8ijWZ9FHgL1NWTpmk11UhBbYaaBRAw&s);
 }
 .discount-tag {
     position: absolute;
@@ -491,6 +575,7 @@ main{
     right: 10px;
     top: 10px;
     text-transform: capitalize;
+    border: 1px solid var(--color-red2);
 }
   
 .card-btn {
@@ -518,7 +603,6 @@ main{
 }
 .item-desc {
     width: 100%;
-    padding: 0 12px;
 }
   
 .product-brand {
@@ -534,10 +618,38 @@ main{
 }
 .product-price {
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 .strip-price {
     margin-left: 10px;
     opacity: 0.5;
     text-decoration: line-through;
+    font-size: 1.1em;
+}
+.like-product{
+    position: absolute;
+    padding: 5px;
+}
+.like-product button{
+    padding: 8px 9px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--color-red);
+    transition: 0.2s ease-out;
+    scale: 1;
+    text-align: center;
+    align-items: center;
+}
+.like-product button i{
+    font-size: 15px;
+}
+.like-product button:hover{
+    border-color: var(--color-red);
+    scale: 0.95;
+}
+.new-span{
+    background: -webkit-linear-gradient(45deg, var(--color-red), var(--color-strong-yellow2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
