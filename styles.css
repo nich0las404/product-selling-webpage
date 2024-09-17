@@ -20,7 +20,7 @@ button{
     --color-blue: #00bfff;
     --color-old-red: #A04747;
     --color-light-blue: #536493;
-    --color-blue: #2C4E80;
+    --color-older-blue: #2C4E80;
     --color-red2: red;
 
 }
@@ -35,6 +35,10 @@ button{
 /* should be used on mobile devices */
 .open-close-nav-btn{
     display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-strong-yellow);
 }
 .ul-nav{
     display: flex;
@@ -48,6 +52,7 @@ button{
     border-bottom: 2px solid black;
     backdrop-filter: blur(10px);
     padding-top: 1.3rem;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Added transition */
 }
 .ul-nav button li{
     font-size: 1.2rem;
@@ -103,6 +108,59 @@ button{
     background: -webkit-linear-gradient(45deg, var(--color-red), var(--color-strong-yellow2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+/* Media query for screens 800px or smaller */
+@media (max-width: 800px) {
+    .nav-bar{
+        padding: 0;
+        border-bottom: 2px solid var(--color-strong-yellow);
+    }
+    .logo-container-nav{
+        margin-top: -12px
+    }
+    .ul-nav {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position it just below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        gap: 2vmin;
+    }
+    .button-nav::after{
+        background-color: var(--color-older-blue);
+        height: 100%;
+    }
+    .button-nav:hover{
+        -webkit-text-stroke-width: 0px;
+        color: white;
+    }
+    .button-nav{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .open-close-nav-btn {
+        display: flex;
+        padding: 10px 0;
+        justify-content: right;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        font-size: 2em;
+        padding-right: 6vw
+    }
+}
+
+.open-close-nav-btn i {
+    transition: transform 0.25s ease; /* Rotate smoothly */
+}
+
+.rotate-icon {
+    transform: rotate(180deg); /* Rotate 180 degrees */
+}
+.nav-bar .ul-nav.open {
+    display: flex;
 }
 /* header */
 header{
@@ -384,11 +442,13 @@ main{
     }
 }
 .discount-inner-container{
-    width: 50%;
-    padding: 0 10px;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .discount-title{
     font-size: 2.5rem;
@@ -398,27 +458,38 @@ main{
     text-shadow: -2px 2px rgba(0,0,0,0.6);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-}
-.discount-desc{
-    font-size: 1.1rem;
-    padding: 0 2em;
-    text-align: left;
-    font-weight: bold;
-    margin-top: 10px;
-    color: var(--color-strong-yellow);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    padding: 0 1vw
 }
 .discount-timer{
     font-size: 4.5rem;
     width: 100%;
-    margin: 5px 0;
+    margin: 0;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+.add-to-cart-btn{
+    width: 55%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    margin: 20px 0;
+    border: 1px solid var(--color-blue);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s ease-out;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    color: var(--color-blue);
+    text-shadow: 2px 2px black;
+}
+.add-to-cart-btn:hover{
+    transform: translateY(1px);
+    text-shadow: 1px 1px black;
+    color: var(--color-strong-yellow);
+    border: 1px solid var(--color-strong-yellow);
+}
 .discount-items-container{
-    width: 50%;
+    width: clamp(600px, 50vw, 50%);
     height: 100%;
     position: relative;
     border: 2px solid black;
@@ -486,12 +557,12 @@ main{
     height: 100%;
     top:0;
     left: 0;
-    background: url(BGBaron12.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
     border-radius: 10px;
+    transition: 0.4s ease-in-out;
 }
 .original-price{
     text-decoration: line-through
@@ -530,28 +601,6 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-.item-card:nth-child(1) .product-img{
-    background-image: url(venum-boxing-gloves.webp);
-}
-.item-card:nth-child(2) .product-img{
-    background-image: url(Jeremy_golden_boxing_gloves.png);
-    background-color: rgb(231.01, 231.01, 231.01);
-}
-.item-card:nth-child(3) .product-img{
-    background-image: url(https://images.tokopedia.net/img/cache/700/hDjmkQ/2022/11/30/cfda42b4-6cc4-4bf4-8a16-517aeb417169.jpg);
-}
-.item-card:nth-child(4) .product-img{
-    background-image: url(https://images.tokopedia.net/img/cache/700/VqbcmM/2023/4/9/d5ac554e-3c6b-4a1c-a02d-6b9b18ccb661.jpg);
-}
-.item-card:nth-child(5) .product-img{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61mFU3WYRgL._AC_UL600_SR600,600_.jpg);
-}
-.item-card:nth-child(6) .product-img{
-    background-image: url(https://www.ringside.com/media/catalog/product/cache/15d1fe01646e272664ed1c1747c334a6/f/t/ftg2_1_v1.jpg);
-}
-.item-card:nth-child(7) .product-img{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXim_8ijWZ9FHgL1NWTpmk11UhBbYaaBRAw&s);
 }
 .discount-tag {
     position: absolute;
@@ -683,10 +732,18 @@ footer h1{
 }
 hr{
     margin: 0 5vw;
+    padding: 2px;
+    background: linear-gradient(45deg, var(--color-red2), var(--color-older-blue));
+    border-radius: 30px;
+}
+.redBlue{
+    background: -webkit-linear-gradient(45deg, var(--color-red2), var(--color-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* ACTUAL inner footer */
 .footer-section{
-    margin-top: 20px;
+    margin-top: 80px;
     width: 100%;
     background-color: var(--color-old-blue);
     margin-bottom: -20px;
@@ -719,7 +776,7 @@ hr{
     border-radius: 10px;
     font-weight: bold;
     background: linear-gradient(45deg, var(--color-strong-yellow), var(--color-gold));
-    color: var(--color-blue);
+    color: var(--color-older-blue);
     transition: 0.2s ease;
     font-size: 1.1em;
 }
@@ -773,11 +830,12 @@ hr{
 }
 .fa-youtube:hover{
     color: #ff2c2c;
-    background-color: white;
+    background: white;
     border-radius: 8px;
 }
 .footer-hr{
-    margin-top: 20px
+    margin-top: 20px;
+    padding:0;
 }
 .trademark{
     padding: 0 0 15px 5vw;
