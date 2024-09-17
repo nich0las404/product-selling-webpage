@@ -17,7 +17,6 @@ setInterval(changeBackgroundGif, 5000);
 document.addEventListener('DOMContentLoaded', () => {
 const categoryButtons = document.querySelectorAll('.category-btn');
 const discountContainer = document.querySelector('.discount-container');
-const scroller = document.querySelectorAll('.scroller')
     // Create an IntersectionObserver
 const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -27,7 +26,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             }
         });
     }, {
-        threshold: 0.2 // Trigger when 20% of the element is in view
+        threshold: 0.15 // Trigger when 20% of the element is in view
     });
 
     // Observe each category button
@@ -35,9 +34,6 @@ const observer = new IntersectionObserver((entries, observer) => {
         observer.observe(button);
     });
     observer.observe(discountContainer);
-    scroller.forEach(scrolls => 
-        observer.observe(scrolls)
-    )
 });
 
 // MAIN: TIMER FOR DISCOUNTS ---- 8 September 2024
